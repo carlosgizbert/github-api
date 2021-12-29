@@ -1,0 +1,39 @@
+:root{
+  --color-primary: #5758BB;
+  --color-secondary: #363780;
+
+  --aside-width: 300px;
+}
+
+*{
+  font-family: 'Lato', sans-serif;  
+  margin: 0;
+}
+
+.devDetails{
+  grid-area: dev-details
+}
+
+.repos{
+  grid-area: repos
+}
+
+.App {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+.profile{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: var(--aside-width) 1fr;
+  grid-template-areas:
+  "dev-details repos";
+}
+
+
+body{
+  background-color: #fff
+}
