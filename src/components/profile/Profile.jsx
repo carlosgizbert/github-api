@@ -3,7 +3,6 @@ import DevDetails from './template/DevDetails'
 import RepositoriesCard from './template/RepositoriesCard'
 import './Profile.css'
 import axios from 'axios'
-import { useParams } from "react-router-dom";
 
 const initialState = {
   user: {},
